@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>AYSH Clothings</title>
+</head>
+
+<body class="bg-[#190d05]">
+    <header class="h-28 bg-[#eae7e7] flex justify-around items-center ">
+        <button class="text-[#190d05] text-3xl" type="button" data-drawer-target="drawer-navigation"
+            data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
+            <!-- Hamburger Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </button>
+
+        <img class=" w-36" src="logo-b.jpg " alt="">
+
+        <button class="text-[#190d05] text-3xl">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-8">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+            </svg>
+        </button>
+    </header>
+
+    <!-- Drawer -->
+    <div id="drawer-navigation"
+        class="fixed top-0 left-0 z-40 w-3/4 sm:w-64 h-screen p-6 overflow-y-auto transition-transform -translate-x-full bg-[#eae7e7] text-black"
+        tabindex="-1" aria-labelledby="drawer-navigation-label">
+
+        <!-- Logo and Close -->
+        <div class="flex items-center justify-between mb-10 h-20">
+            <img class=" w-36" src="logo-b.jpg " alt="">
+            <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation"
+                class="text-black hover:text-gray-600 text-3xl">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Nav Links -->
+        <ul class="space-y-6 text-xl font-extrabold tracking-wide">
+            <li><a href="#" class="hover:underline">Home</a></li>
+            <li><a href="#" class="hover:underline">All products</a></li>
+            <li><a href="#" class="hover:underline">TSHIRT</a></li>
+            <li><a href="#" class="hover:underline">SHIRTS</a></li>
+            <li><a href="#" class="hover:underline">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <h3 class="text-white text-2xl font-bold text-center p-7">NEW ARIVALS</h3>
+
+    <div>
+        <img src="product-a.png" alt="">
+    </div>
+    <div class="product-description py-6 flex items-center justify-around    ">
+        <div class="product-details">
+            <p class="name text-white">Basic Black Tee</p>
+            <p class="name text-white">Color: Black</p>
+            <p class="name text-white">Best price- 400Rs</p>
+        </div>
+        <button class="text-black bg-white p-1 rounded-2xl px-4 font-bold">Buy now</button>
+    </div>
+    <!-- Flowbite for Drawer Functionality -->
+    <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
+</body>
+
+</html>
